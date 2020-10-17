@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./styles/main/tree.css">
     <link rel="stylesheet" href="./styles/right_menue.css">
     <link rel="stylesheet" href="./styles/list_new_task.css">
+    <link rel="stylesheet" href="./styles/select_box.css">
 
     <script src="https://cdn.anychart.com/releases/8.9.0/js/graphics.min.js" type="text/javascript"></script>
 </head>
@@ -23,10 +24,21 @@
         <button class="managment_buttons_remove">Удалить</button>
     </div>
     <div class="filter">
-        <div class="filter_list_boards">
-            Доски
-        </div>
-        <button id="bt1" class="button1" ><img src="./img/menue.png" height="56px"width="10%" style="background-color: white"></button>
+
+            <div class="select_box">
+                <div class="options_container active">
+                    <div class="option">
+                        <p data-name="Celluform тело(10 мл)" data-price="3000">
+                            Celluform тело(10 мл) 3000
+                        </p>
+                    </div>
+                </div>
+                <div class="selected" data-name="Атравматичная чистка" data-price="5500">
+                    Атравматичная чистка 5500
+                </div>
+            </div>
+
+        <button id="bt1" class="button1" ><img src="./img/menue.png" height="10%"width="10%"></button>
     </div>
     <div class="list_tasks">
         <ul>

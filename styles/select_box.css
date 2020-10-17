@@ -1,0 +1,84 @@
+.select_box {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    position: relative;
+}
+
+.select_box .options_container {
+    background-color: #2f3640;
+    color: #f5f6fa;
+    max-height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+    border-radius: 8px;
+    overflow: hidden;
+    order: 1;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 52px;
+    z-index: 1;
+}
+
+.select_box .option, .selected {
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+.select_box label {
+    cursor: pointer;
+}
+
+.select_box .option:hover {
+    background-color: #454b57;
+}
+
+.select_box .option .radio {
+    display: none;
+}
+
+.select_box .options_container.active {
+    max-height: 240px;
+    opacity: 1;
+    overflow-y: auto;
+}
+
+.select_box .options_container::-webkit-scrollbar {
+    width: 8px;
+    background-color: #0d141f;
+    border-radius: 0 8px 8px 0;
+}
+
+.select_box .options_container::-webkit-scrollbar-thumb {
+    background-color: #525861;
+    border-radius: 0 8px 8px 0;
+}
+
+.selected {
+    margin-top: 2%;
+    background-color: #2f3640;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    order: 0;
+    color: #f5f6fa;
+    position: relative;
+}
+
+.selected::after {
+    content: "";
+    background: url("../img/arrow-down.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 32px;
+    right: 10px;
+    top: 5px;
+    transition: all 0.4s;
+}
+
+.select_box .options_container.active+.selected::after {
+    transform: rotateX(180deg);
+    top: -6px;
+}
