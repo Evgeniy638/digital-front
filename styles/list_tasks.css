@@ -1,0 +1,33 @@
+.list_tasks{
+    background-color: #375775;
+}
+
+.descrip{
+    padding-top: 5px;
+    margin-left: 10%;
+}
+
+.deadline{
+    padding-top: 10px;
+    font-size: 25px;
+    margin: 5px;
+}
+
+.dash{
+    font-weight: bold;
+}
+
+.task{
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.tasks{
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    list-style: none;
+    height: 50px;
+    border-bottom: 2px solid #396893;
+}
