@@ -22,12 +22,30 @@
     margin-top: 5px;
 }
 
-.tasks{
+.tasks_description{
     padding-bottom: 10px;
     display: flex;
     flex-direction: row;
     color: white;
     list-style: none;
     height: 50px;
+}
+
+.duff{
+    display: flex;
+    flex-direction: row-reverse;
     border-bottom: 2px solid #396893;
+    padding-bottom: 10px;
+}
+.tasks{
+    display: flex;
+    flex-direction: column;
+}
+
+.level{
+    background-color: #c4e2fd;
+    color: white;
+    margin-right: 10px;
+    width: 15px;
+    height: 2px;
 }
