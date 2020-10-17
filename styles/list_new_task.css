@@ -42,7 +42,7 @@
 
 .list_task_input2 {
     width: 80%;
-    height: 400px;
+    height: 350px;
     resize: none;
     background-color: #b8e3fe;
     border-radius: 5px;
@@ -73,6 +73,7 @@
 }
 
 .list_task_tag {
-    color: red;
-    background-size: 40px;
+    box-sizing: border-box;
+    background-color: red;
+
 }
