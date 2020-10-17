@@ -1,21 +1,21 @@
 .select_box {
     display: flex;
-    width: 300px;
+    border-radius: 9px;
+    width: 100%;
     flex-direction: column;
     position: relative;
 }
 
 .select_box .options_container {
-    background-color: #2f3640;
-    color: #f5f6fa;
+    background-color: white;
     max-height: 0;
     width: 100%;
     opacity: 0;
     transition: all 0.4s;
-    border-radius: 8px;
     overflow: hidden;
     order: 1;
     margin-bottom: 10px;
+    border-bottom-right-radius: 8px;
     position: absolute;
     top: 52px;
     z-index: 1;
@@ -46,8 +46,7 @@
 
 .select_box .options_container::-webkit-scrollbar {
     width: 8px;
-    background-color: #0d141f;
-    border-radius: 0 8px 8px 0;
+    background-color: white;
 }
 
 .select_box .options_container::-webkit-scrollbar-thumb {
@@ -56,12 +55,8 @@
 }
 
 .selected {
-    margin-top: 2%;
-    background-color: #2f3640;
-    border-radius: 8px;
-    margin-bottom: 8px;
+    background-color: white;
     order: 0;
-    color: #f5f6fa;
     position: relative;
 }
 
