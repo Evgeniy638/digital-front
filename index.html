@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./styles/list_dashboards.css">
     <link rel="stylesheet" href="./styles/list_tasks.css">
     <link rel="stylesheet" href="./styles/main/tree.css">
+    <link rel="stylesheet" href="./styles/right_menue.css">
+    <link rel="stylesheet" href="./styles/list_new_task.css">
 
     <script src="https://cdn.anychart.com/releases/8.9.0/js/graphics.min.js" type="text/javascript"></script>
 </head>
@@ -24,7 +26,7 @@
         <div class="filter_list_boards">
             Доски
         </div>
-        <div class="filter_button_menu">&#9776;</div>
+        <button id="bt1" class="button1" ><img src="./img/menue.png" height="10%"width="10%"></button>
     </div>
     <div class="list_tasks">
         <ul>
@@ -62,14 +64,57 @@
             </li>
         </ul>
     </div>
+
     <main>
-        <div class="wrap_tree">
+        <div class="wrap_tree" style="display: none;">
             <div class="tree">
                 <div id="contauner"></div>
             </div>
             
             <button class="scale scaleIncrease">+</button>
             <button class="scale scaleOut">&ndash;</button>
+        </div>
+
+        <div id="s_panel">
+            <center><p class="li">Фильтровать по:</p></center>
+            <left><p class="li">Тегам:</p></left>
+            <left><p class="li">Сотрудникам:</p></left>
+
+            <div class="cl3">
+                <center><p class="li">Отсортировать по:</p></center>
+                <p class = "li">Дедлайнам</p>
+                <div class="cl"><label class="li"><input type="checkbox">Сначала ближайшие</label><label class="ri"><input type="checkbox">Сначала дальние</label></div>
+                <p class="li">Дате обновления</p>
+                <div class="cl"><label class="li"><input type="checkbox">Сначала новые</label><label class="ri"><input type="checkbox">Сначала дальние</label></div>
+                <p class="li">Сложности</p>
+                <div class="cl"><label class="li"><input type="checkbox">Сначала сложные</label><label class="ri"><input type="checkbox">Сначала простые</label></div>
+            </div>
+        </div>
+
+        <div class="list_new_task">
+            <p class="list_task_title"><b>Краткое описание задачи</b></p>
+            <input type="text" class="list_task_input1" name="short_descpription" maxlength="50">
+            <p class="list_task_title"><b>Полное описание задачи</b></p>
+            <textarea type="text" name="description" class="list_task_input2"></textarea>
+
+            <div class="list_task_table">
+                <span class="list_task_title1">
+                    Контролирующий: 
+                    <span class="list_task_title2"><input type="text" class="list_task_input_color" name="checking"></span>
+                </span> 
+                <span class="list_task_title1">
+                    Исполнитель:
+                    <span class="list_task_title2"><input type="text" class="list_task_input_color" name="executor"></span>
+                </span>
+                <span class="list_task_title1">Сложность:
+                    <span class="list_task_title2"><progress value="1" max="5"></progress></span>
+                </span>
+                <span class="list_task_title1"> Дедлайн:
+                    <span class="list_task_title2"><input type="date" class="list_task_input_color" name="deadline"></span>
+                </span>
+            </div>
+
+            <p class="list_task_title"><b>Тэги</b></p>
         </div>
     </main>
     <div class="list_dashboards">
@@ -87,5 +132,11 @@
     <script src="./scripts/httpHelper.js"></script>
     <script src="./scripts/tree.js"></script>
     <script src="./scripts/events.js"></script>
+    <script>
+        let panel = document.getElementById("s_panel")
+        document.querySelector("#bt1 img").addEventListener("click", ()=>{
+            panel.classList.toggle("opened_panel")
+        })
+    </script>
 </body>
 </html>
