@@ -43,9 +43,10 @@
 }
 
 .level{
+    transform: skew(-20deg,0deg);
     background-color: #c4e2fd;
     color: white;
     margin-right: 10px;
     width: 15px;
-    height: 2px;
+    height: 4px;
 }
