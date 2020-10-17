@@ -69,6 +69,21 @@ tree = {
                                 }
                             ],
                             children: []
+                        },
+                        {
+                            id: 232,
+                            leader: 1,
+                            executor: 1,
+                            deadline: 12312123,
+                            short_desc: "232",
+                            dificalty: 1,
+                            tags: [
+                                {
+                                    id: 2,
+                                    name: "имя тега"
+                                }
+                            ],
+                            children: []
                         }
                     ]
                 }
