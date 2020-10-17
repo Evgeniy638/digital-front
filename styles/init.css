@@ -15,7 +15,7 @@ li {
 }
 
 body {
-    font-family: "Helvetica Neue", serif;
+    
     display: grid;
     grid-template-columns: 373px 1fr;
     grid-template-rows: auto 1fr auto;

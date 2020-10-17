@@ -6,6 +6,12 @@
 .list_task_title1 {
     font-size: 15pt;
     position: relative;
+
+}
+
+.list_task_title {
+    display: flex;
+    justify-content: space-between;
 }
 
 .list_task_title2 {
@@ -53,4 +59,20 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+}
+
+.list_task_button {
+    box-sizing: border-box;
+    background-color: #233342;
+    color: white;
+    cursor: pointer;
+    padding: 6px;
+    font-size: 18px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.list_task_tag {
+    color: red;
+    background-size: 40px;
 }
