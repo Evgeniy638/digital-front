@@ -74,6 +74,10 @@
 
 .list_task_tag {
     box-sizing: border-box;
-    background-color: red;
+    font-size: 18px;
+    padding: 5px;
+    background-color: #99CCCC;
+    border-radius: 10px;
+
 
 }
