@@ -1,14 +1,29 @@
-.list_task_title {
-    display: flex;
-    justify-content: space-between;
-    font-size: 36px;
+.list_new_task {
+    padding-left: 20px;
+    font-size: 28px;
+}
+
+.list_task_title1 {
+    font-size: 15pt;
+    position: relative;
 }
 
 .list_task_title2 {
-    display: flex;
-        justify-content: space-around;
+    position: absolute;
+    right: 0;
+}
 
-    font-size: 36px;
+.list_task_title1:nth-child(2n) {
+    margin-left: 10px; 
+    margin-right: 20px;
+}
+
+.list_task_title1:nth-child(2n+1) {
+    margin-right: 10px; 
+}
+
+.list_task_title1:first-child {
+    margin-bottom: 10px;
 }
 
 .list_task_input1 {
@@ -36,5 +51,6 @@
 
 .list_task_table {
     display: grid;
-    grid-template-columns: 90%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
