@@ -62,14 +62,13 @@
 
 .selected::after {
     content: "";
-    background: url("../img/arrow-down.svg");
     background-size: contain;
-    background-repeat: no-repeat;
+    background: url("../img/arrow-down.svg") no-repeat;
     position: absolute;
     height: 100%;
     width: 32px;
     right: 10px;
-    top: 5px;
+    top: 15px;
     transition: all 0.4s;
 }
 
