@@ -12,6 +12,11 @@
 	transition-duration: 0.3s;
 
 	}
+
+.button1 img {
+	cursor: pointer;
+}
+
 #s_panel {
 	background-color: white;
 	z-index: 1;
@@ -20,7 +25,7 @@
 	position: fixed;
 	right: -400px;
 	width: 400px;
-	height: 100%;
+	height: calc(100% - 56px);
     border: solid black 1px;
     box-sizing: border-box;
 	-webkit-transition-duration: 0.5s;
@@ -30,22 +35,30 @@
 #s_panel.opened_panel{
     right: 0;
 }
+#s_panel label{
+	cursor: pointer;
+}
 .cl{
     margin-left: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-p.ri{
+.cl input{
+	margin-right: 3px;
+}
+.ri{
     margin-bottom: 5px;
     margin-top: 5px;
     margin-right: 30px;
 }
-p.li{
+.li{
     margin-bottom: 5px;
-    margin-top: 5px;
+	margin-top: 5px;
+	margin-left: 10px;
 }
 .cl3{
-    position: absolute;
+	position: absolute;
+	width: 100%;
     bottom: 0;
 }

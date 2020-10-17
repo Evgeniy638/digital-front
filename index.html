@@ -48,23 +48,10 @@
     </div>
 
     <main>
-        <div class="wrap_tree">
-            <div class="tree" style="display: none;">
+        <div class="wrap_tree" style="display: none;">
+            <div class="tree">
                 <div id="contauner"></div>
             </div>
-            <div class="list_new_task">
-            <p class="list_task_title"><b>Краткое описание задачи</b></p>
-            <input type="text" class="list_task_input1" name="short_descpription" maxlength="50">
-            <p class="list_task_title"><b>Полное описание задачи</b></p>
-            <textarea type="text" name="description" class="list_task_input2"></textarea>
-
-            <div class="list_task_table">
-            <p class="list_task_title"><span class="list_task_title1">Контролирующий <input type="text" class="list_task_input_color" name="checking"></span> <span class="list_task_title1">Исполнитель <input type="text" class="list_task_input_color" name="executor"></span></p>
-            <p class="list_task_title"> <span class="list_task_title1">Сложность <progress value="1" max="5"></progress></span><span class="list_task_title1"> Дедлайн <input type="date" class="list_task_input_color"  name="deadline"></span></p>
-            </div>
-
-            <p class="list_task_title"><b>Тэги</b></p>
-        </div>
             
             <button class="scale scaleIncrease">+</button>
             <button class="scale scaleOut">&ndash;</button>
@@ -78,14 +65,39 @@
             <div class="cl3">
                 <center><p class="li">Отсортировать по:</p></center>
                 <p class = "li">Дедлайнам</p>
-                <div class="cl"><p class="li"><input type="checkbox">Сначала ближайшие</p><p class="ri"><input type="checkbox">Сначала дальние</p></div>
+                <div class="cl"><label class="li"><input type="checkbox">Сначала ближайшие</label><label class="ri"><input type="checkbox">Сначала дальние</label></div>
                 <p class="li">Дате обновления</p>
-                <div class="cl"><p class="li"><input type="checkbox">Сначала новые</p><p class="ri"><input type="checkbox">Сначала дальние</p></div>
+                <div class="cl"><label class="li"><input type="checkbox">Сначала новые</label><label class="ri"><input type="checkbox">Сначала дальние</label></div>
                 <p class="li">Сложности</p>
-                <div class="cl"><p class="li"><input type="checkbox">Сначала сложные</p><p class="ri"><input type="checkbox">Сначала простые</p></div>
+                <div class="cl"><label class="li"><input type="checkbox">Сначала сложные</label><label class="ri"><input type="checkbox">Сначала простые</label></div>
             </div>
         </div>
 
+        <div class="list_new_task">
+            <p class="list_task_title"><b>Краткое описание задачи</b></p>
+            <input type="text" class="list_task_input1" name="short_descpription" maxlength="50">
+            <p class="list_task_title"><b>Полное описание задачи</b></p>
+            <textarea type="text" name="description" class="list_task_input2"></textarea>
+
+            <div class="list_task_table">
+                <span class="list_task_title1">
+                    Контролирующий: 
+                    <span class="list_task_title2"><input type="text" class="list_task_input_color" name="checking"></span>
+                </span> 
+                <span class="list_task_title1">
+                    Исполнитель:
+                    <span class="list_task_title2"><input type="text" class="list_task_input_color" name="executor"></span>
+                </span>
+                <span class="list_task_title1">Сложность:
+                    <span class="list_task_title2"><progress value="1" max="5"></progress></span>
+                </span>
+                <span class="list_task_title1"> Дедлайн:
+                    <span class="list_task_title2"><input type="date" class="list_task_input_color" name="deadline"></span>
+                </span>
+            </div>
+
+            <p class="list_task_title"><b>Тэги</b></p>
+        </div>
     </main>
     <div class="list_dashboards">
         <ul class="list_dashboards_list">
@@ -104,7 +116,7 @@
     <script src="./scripts/events.js"></script>
     <script>
         let panel = document.getElementById("s_panel")
-        document.getElementById("bt1").addEventListener("click", ()=>{
+        document.querySelector("#bt1 img").addEventListener("click", ()=>{
             panel.classList.toggle("opened_panel")
         })
     </script>
