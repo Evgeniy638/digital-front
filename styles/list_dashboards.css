@@ -17,6 +17,7 @@
 }
 
 .list_dashboards_item {
+    cursor: pointer;
     background-color: rgb(180, 180, 180);
     -webkit-transform: skew(calc(-1 * var(--deg-skew_list_dashboards)), 0deg);
     -moz-transform: skew(calc(-1 * var(--deg-skew_list_dashboards)), 0deg);
@@ -40,7 +41,7 @@
 }
 
 .list_dashboards_item:not(:first-child) {
-    margin-left: 2px;
+    margin-left: 3px;
 }
 
 .list_dashboards_item.list_dashboards_add {
