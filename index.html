@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles/init.css">
+    <link rel="stylesheet" href="./styles/filter.css">
+    <link rel="stylesheet" href="./styles/managment_buttons.css">
+    <link rel="stylesheet" href="./styles/list_dashboards.css">
+    <link rel="stylesheet" href="./styles/list_tasks.css">
+    <link rel="stylesheet" href="./styles/main/tree.css">
+
+    <script src="https://cdn.anychart.com/releases/8.9.0/js/graphics.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="managment_buttons">
+        <button class="managment_buttons_add">+</button>
+        <button class="managment_buttons_remove">-</button>
+    </div>
+    <div class="filter">
+        <div class="filter_list_boards">
+            Доски
+        </div>
+        <div class="filter_button_menu">&#9776;</div>
+    </div>
+    <div class="list_tasks">
+        <ul>
+            <li>
+                Разместить объявление
+            </li>
+        </ul>
+    </div>
+    <main>
+        <div class="tree">
+            <div id="contauner"></div>
+            <div id="tree_elements"></div>
+        </div>
+    </main>
+    <div class="list_dashboards">
+        <ul class="list_dashboards_list">
+            <li class="list_dashboards_item">Контрольная панель</li>
+            <li class="list_dashboards_item">Контрольная панель</li>
+            <li class="list_dashboards_item">Контрольная панель</li>
+            <li class="list_dashboards_item">Контрольная панель</li>
+        </ul>
+
+        <button class="list_dashboards_add">+</button>
+    </div>
+
+    <script src="./scripts/store.js"></script>
+    <script src="./scripts/httpHelper.js"></script>
+    <script src="./scripts/tree.js"></script>
+    <script src="./scripts/events.js"></script>
+</body>
+</html>
