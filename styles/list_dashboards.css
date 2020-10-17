@@ -5,21 +5,32 @@
 }
 
 .list_dashboards_list {
+    position: relative;
+    left: -15px;
     display: flex;    
+}
+
+:root {
+    --deg-skew_list_dashboards: 15deg
 }
 
 .list_dashboards_item {
     background-color: rgb(180, 180, 180);
-    /* transform: skew(-15deg, 0); */
-    padding: 3px 5px;
+    -webkit-transform: skew(calc(-1 * var(--deg-skew_list_dashboards)), 0deg);
+    -moz-transform: skew(calc(-1 * var(--deg-skew_list_dashboards)), 0deg);
+    -o-transform: skew(calc(-1 * var(--deg-skew_list_dashboards)), 0deg);
+    -ms-transform: skew(calc(-1 * var(--deg-skew_list_dashboards)), 0deg);
+    transform: skew(calc(-1 * var(--deg-skew_list_dashboards)), 0deg);
+    padding: 3px 10px;
 }
 
 .list_dashboards_item span {
-    -webkit-transform: skew(-20deg, 0deg);
-    -moz-transform:skew(-20deg, 0deg);
-    -o-transform:skew(-20deg, 0deg);
-    -ms-transform:skew(-20deg, 0deg);
-    transform: skew(-20deg, 0deg);
+    -webkit-transform: skew(var(--deg-skew_list_dashboards), 0deg);
+    -moz-transform:skew(var(--deg-skew_list_dashboards), 0deg);
+    -o-transform:skew(var(--deg-skew_list_dashboards), 0deg);
+    -ms-transform:skew(var(--deg-skew_list_dashboards), 0deg);
+    transform: skew(var(--deg-skew_list_dashboards), 0deg);
+    display: block;
 }
 
 .list_dashboards_item:first-child {
