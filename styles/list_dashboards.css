@@ -41,16 +41,19 @@
 }
 
 .list_dashboards_item:not(:first-child) {
-    margin-left: 3px;
+    margin-left: 4px;
 }
 
 .list_dashboards_item.list_dashboards_add {
-    background-color: rgb(77, 77, 77);
+    background-color: rgb(114, 114, 114);
     margin-bottom: 4px;
     margin-top: 4px;
+    margin-left: 10px;
     padding-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
     cursor: pointer;
-    height: 12px;
+    height: 18px;
 }
 
 .list_dashboards_item.list_dashboards_add button{
