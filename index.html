@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./styles/list_dashboards.css">
     <link rel="stylesheet" href="./styles/list_tasks.css">
     <link rel="stylesheet" href="./styles/main/tree.css">
+    <link rel="stylesheet" href="./styles/list_new_task.css">
 
     <script src="https://cdn.anychart.com/releases/8.9.0/js/graphics.min.js" type="text/javascript"></script>
 </head>
@@ -46,9 +47,22 @@
     </div>
     <main>
         <div class="wrap_tree">
-            <div class="tree">
+            <div class="tree" style="display: none;">
                 <div id="contauner"></div>
             </div>
+            <div class="list_new_task">
+            <p class="list_task_title"><b>Краткое описание задачи</b></p>
+            <input type="text" class="list_task_input1" name="short_descpription" maxlength="50">
+            <p class="list_task_title"><b>Полное описание задачи</b></p>
+            <textarea type="text" name="description" class="list_task_input2"></textarea>
+
+            <div class="list_task_table">
+            <p class="list_task_title"><span class="list_task_title1">Контролирующий <input type="text" class="list_task_input_color" name="checking"></span> <span class="list_task_title1">Исполнитель <input type="text" class="list_task_input_color" name="executor"></span></p>
+            <p class="list_task_title"> <span class="list_task_title1">Сложность <progress value="1" max="5"></progress></span><span class="list_task_title1"> Дедлайн <input type="date" class="list_task_input_color"  name="deadline"></span></p>
+            </div>
+
+            <p class="list_task_title"><b>Тэги</b></p>
+        </div>
             
             <button class="scale scaleIncrease">+</button>
             <button class="scale scaleOut">&ndash;</button>

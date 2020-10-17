@@ -1,0 +1,40 @@
+.list_task_title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 36px;
+}
+
+.list_task_title2 {
+    display: flex;
+        justify-content: space-around;
+
+    font-size: 36px;
+}
+
+.list_task_input1 {
+    width: 80%;
+    box-sizing: border-box;
+    background-color: #b8e3fe;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.list_task_input2 {
+    width: 80%;
+    height: 400px;
+    resize: none;
+    background-color: #b8e3fe;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.list_task_input_color {
+    background-color: #b8e3fe;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.list_task_table {
+    display: grid;
+    grid-template-columns: 90%;
+}
