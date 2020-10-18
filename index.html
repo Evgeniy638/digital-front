@@ -121,7 +121,18 @@
                     <span class="list_task_title2"><input type="text" class="list_task_input_color" name="executor"></span>
                 </span>
                 <span class="list_task_title1">Сложность:
-                    <span class="list_task_title2"><progress value="1" max="5"></progress></span>
+                    <span class="list_task_title2"><!-- <progress id="progressBar" value="1" max="5"></progress> -->
+                        <input type="range" step="1" min="0" max="5" list="rangeList" onchange="document.getElementById('rangeValue').innerHTML = this.value;">
+                        <!-- <datalist id="rangeList">
+                        <option value="0" label="1">
+                        
+                        <option value="2" label="3">
+                        <option value="2" label="3">
+                        <option value="3" label="4">
+                        <option value="4" label="5">
+                        </datalist> -->
+                        <span id="rangeValue">1</span>
+                    </span>
                 </span>
                 <span class="list_task_title1"> Дедлайн:
                     <span class="list_task_title2"><input type="date" class="list_task_input_color" name="deadline"></span>
@@ -147,6 +158,15 @@
     <script src="./scripts/httpHelper.js"></script>
     <script src="./scripts/tree.js"></script>
     <script src="./scripts/events.js"></script>
+    <!-- <script>
+        const progressBar = document.getElementById('progressBar');
+        progressBar.addEventListener('click', function (e) {
+        var x = e.pageX - progressBar.offsetLeft,
+        clickedValue = (x * progressBar.max / progressBar.offsetWidth);
+        progressBar.value = Math.round(clickedValue);
+        console.log(Math.round(clickedValue));
+});
+    </script> -->
     <script>
         let panel = document.getElementById("s_panel")
         document.querySelector("#bt1 img").addEventListener("click", ()=>{
